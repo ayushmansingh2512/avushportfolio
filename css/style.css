@@ -1,0 +1,286 @@
+body{	background: linear-gradient(
+    -45deg,
+        #001f26,   /* Even Darker Cyan */
+        #004040,   /* Even Darker Teal */
+       
+        #003340,   /* Even Darker Slate Blue */
+        #002233,   /* Very Dark Navy Blue */
+        
+        #004040,   /* Even Darker Teal */
+        #002633,   /* Very Dark Steel Teal */
+        #000d0f    /* Very Darker Blue */
+
+);
+background-size: 400% 400%;
+animation: gradient 20s ease infinite;
+ 
+overflow-x: hidden;
+padding: 0%;
+margin: 0%;
+font-family: outfit;
+}
+
+@keyframes gradient {
+0% {
+    background-position: 0% 50%;
+}
+50% {
+    background-position: 100% 50%;
+}
+100% {
+    background-position: 0% 50%;
+}
+ 
+ 
+    
+    
+}
+#cursor {
+    position: fixed;
+    background-color:white ; /* Initial color */
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transition: all 0.25s ease;
+    mix-blend-mode: difference;
+    opacity: 0; /* Initial opacity */
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding:20px 40px ;
+ 
+   
+ }
+
+.names{
+    font-size: 20px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+
+} 
+.names:hover{
+    color:darkcyan;
+    font-size: 22px;
+
+}
+.sidebar{
+    display: flex;
+    margin: 0%;
+}
+
+.nav-item{
+    padding-left: 30px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+ 
+ 
+    }
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-item :hover{
+     color:darkcyan;
+     font-size: 20px;
+}
+
+ .about{
+    display: flex;
+    padding: 200px 300px;
+    justify-content: center;
+    align-items: center;
+}
+ .image{
+    padding: 0%;
+    margin: 0%;
+ }
+
+.img{
+    display: flex;
+    border-radius: 20px;
+    height: 300px;
+    display: flex;
+    transition: 0.3s;
+    
+}
+ 
+
+.introduction{
+    
+    padding-left: 20px;
+    padding-top: 0%;
+    
+    
+}
+.dnpg{
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.3s;
+}
+ 
+.dnpg:hover{
+  color:darkcyan;
+  text-decoration: none;
+  font-size: 32px;
+  }
+.about-myself{
+    color: #fff;
+    font-size: 30px;
+    margin: 0%;
+    padding-bottom: 20px;
+    
+}
+nav{
+    display: flex;
+    
+    
+
+}
+ 
+ .social-links{
+    padding-right: 20px;
+    list-style: none;
+    display: flex;
+    margin: 0%;
+    padding-left: 0px;
+ 
+ 
+ }
+ li{
+    padding: 0%;
+ }
+
+ svg{
+    transition: 0.3s;
+     
+ }
+ svg:hover{
+   
+    height: 55px;
+    width: 55px;
+    fill:darkcyan;
+ }
+ .footer{
+    text-align: center;
+ }
+ .footer-paragraph{
+    color: #FFF;
+    font-family: outfit;
+   align-items: center;
+   padding-top: 40px;
+  padding-bottom: 20px;
+   margin: 0%;  
+  
+ 
+}
+ 
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+    .navbar {
+      padding: 15px 30px;
+    }
+  
+    .names {
+      font-size: 20px;
+    }
+    .names:hover{
+        font-size: 25px;
+    }
+  
+    .nav-item {
+      padding-left: 20px;
+    }
+  
+    .nav-link {
+      font-size: 15px;
+    }
+  
+     
+  
+    .image {
+      margin: 0;
+      
+    }
+  
+    .img {
+    display: none;
+    }
+  
+    .introduction {
+      padding-left: 40px;
+      padding-top: 10%;
+      
+     
+    }
+    .about-myself{
+        font-size: 25pxpx;
+        
+    }
+ 
+    svg{
+     height: 40px;
+     width: 45px;
+    }
+    .footer-paragraph {
+      font-size: 20px;
+    }
+  }
+  
+  
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+       padding: 10px;
+    }
+.names{
+    font-size: 23px;
+}
+    .navitem{
+        padding-left: 15px;
+        padding-right: 0%;
+        
+    }
+  .nav-link{
+    font-size: 23px;
+  }
+    .about {
+       padding: 100px 20px;
+       flex-direction: column;
+       align-items: center;
+    }
+ 
+    .image {
+       margin-bottom: 20px;
+    }
+ 
+    .img {
+       height: auto;
+       width: 100%;
+       border-radius: 10px;
+    }
+ 
+    .introduction {
+       padding-left: 0;
+    }
+ 
+    .footer-paragraph {
+       padding-bottom: 20px;
+       font-size: 21px;
+    }
+    .dnpg{
+        color: darkcyan;
+    }
+
+ }
+ 
